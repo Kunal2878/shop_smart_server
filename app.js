@@ -125,7 +125,7 @@ import cors from 'cors'
 const app = express();
 
 // Connect to MongoDB Atlas
-mongoose.connect('mongodb+srv://webprokunal:lAs7zbmXPIvUEHn9@shopclus.cc7grak.mongodb.net/', {
+mongoose.connect(process.env.PUBLIC_MONGO_ID, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
