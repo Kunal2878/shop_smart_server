@@ -136,7 +136,7 @@ app.use(express.json());
 app.use(cors())
 // Routes
 app.use('/api', authRoutes);
- 
+ console.log("server reached")
 
 // const generateSecretKey = () => {
 //   return crypto.randomBytes(32).toString('hex');
