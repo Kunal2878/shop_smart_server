@@ -133,7 +133,7 @@ mongoose.connect(process.env.PUBLIC_MONGO_ID, {
 .catch(error => console.error(error));
 
 app.use(express.json());
-app.use(cors({ origin: '*' }));
+// app.use(cors({ origin: '*' }));
 // Routes
 app.use('/api', authRoutes);
  console.log("server reached")
