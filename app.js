@@ -138,6 +138,10 @@ app.use(cors({ origin: '*' }));
 app.use('/api', authRoutes);
  console.log("server reached")
 
+ app.get('/', (req, res) => {
+  res.send('API is running!');
+});
+
 // const generateSecretKey = () => {
 //   return crypto.randomBytes(32).toString('hex');
 // };
