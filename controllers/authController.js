@@ -3,6 +3,7 @@ import jwt from 'jsonwebtoken';
 import  User from '../models/User.js';
 import  {secretKey}  from '../config.js';
 async function registerUser(req, res) {
+  console.log("enter into the server")
   try {
     const { username, password, Email } = req.body;
 
